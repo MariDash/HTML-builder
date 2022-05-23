@@ -15,7 +15,9 @@ fs.readdir(
 
         const fileSize = file.size / 1000;
         if (file.isFile()) {
-          console.log(`${fileName} - ${filePermission} - ${fileSize}kb`);
+          console.log(
+            `${fileName} - ${filePermission.slice(1)} - ${fileSize}kb`
+          );
         }
       });
     });
